@@ -28,6 +28,22 @@ header{
     padding: 10px;
 }
 
+
+/* // responsivness of the site  middle */
+
+@media screen and (max-width: 800px) {
+    .middle {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      font-size: 10px;
+    }
+    .left{
+        visibility: hidden;
+    }
+    .right{
+        visibility: hidden;
+    }
+}
+
 .right a{
     text-decoration: none;
     color: white;
@@ -46,6 +62,8 @@ header{
     justify-content: space-between;
 }
 
+
+
 .right{
     display: flex;
     align-items: center;
@@ -53,6 +71,12 @@ header{
 }
 
 
+@media screen and (max-width: 800px) {
+    .middle {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      font-size: 10px;
+    }
+}
 
 
 
@@ -82,6 +106,18 @@ header{
     top: -454px;
     left: 209px;
     width: 381px;
+}
+
+
+/* //crav responsiveness */
+
+@media screen and (max-width: 800px) {
+    .crav {
+        position: relative;
+        top: -454px;
+        left: 120px;
+        width: 300px;
+    }
 }
 
 
@@ -133,6 +169,8 @@ header{
     padding: 34px;
 }
 
+
+
 .innerabout .left{
     width: 400px;
 }
@@ -148,6 +186,31 @@ header{
 }
 .beloabout .left p{
      color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .innerabout{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        row-gap: 30px;
+        padding: 34px;
+    }
+    .innerabout .left{
+        width: 100%;
+    }
+
+    .innerabout .right{
+        width: 100%;
+    }
+    /* .innerabout .right img{
+        width: 100%;
+        height: 100%;
+    }
+    .beloabout .left p{
+         color: green;
+    } */
 }
 
 
@@ -172,6 +235,12 @@ header{
 
 /* menu items are there */
 
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 
 .menu-items{
@@ -186,12 +255,6 @@ header{
 }
 
 
-.item-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
 .menu-items .menu-para{
     
     display: flex;
@@ -211,6 +274,49 @@ header{
     justify-content: space-between;
     column-gap: 20px;
     
+}
+
+@media screen and (max-width: 800px) {
+    .item-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-items{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 1200px;
+        background-color: white;
+        width: 100%;
+    }
+
+    
+    .menu-items .menu-para{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        height: 100px;
+    
+    }
+    .menu-dish{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 20px;
+        
+    }
+ 
+    .menu-items .menu-para p{
+        color: white;
+    }
+   
 }
 
 .menu-dish .left-dish{
